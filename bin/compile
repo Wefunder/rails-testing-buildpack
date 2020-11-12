@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ -f $1/config/database.yml.heroku ]; then
+  echo "Copied config/database.yml.heroku to config/database.yml"
+  cp $1/config/database.yml.heroku $1/config/database.yml
+fi
