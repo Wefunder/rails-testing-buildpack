@@ -1,9 +1,5 @@
 #!/bin/sh
 
 # this pack is valid for Heroku review apps
-if [ "$HEROKU_REVIEW_APP" = "true" ]; then
-  echo "Rails Testing Buildpack"
-  exit 0
-else
-  exit 1
-fi
+echo "Rails Testing Buildpack"
+exit 0
